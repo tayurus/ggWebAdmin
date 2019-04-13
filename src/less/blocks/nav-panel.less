@@ -1,0 +1,38 @@
+.nav-panel {
+  background-color: #edf0f2;
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  padding-top: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &__notifications {
+    background-color: #6898bc;
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+    padding: 2px;
+    border: 2px solid #6898bc;
+    background-clip: content-box;
+    position: relative;
+
+    &::after {
+      content: attr(data-count);
+      position: absolute;
+      color: #ffffff;
+      font-family: "Brandon Grotesque - Black";
+      font-size: 20px;
+      background-color: #6898bc;
+      min-width: 25px;
+      min-height: 25px;
+      border-radius: 100%;
+      right: -25%;
+      top: -25%;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
