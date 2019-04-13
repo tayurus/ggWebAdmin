@@ -1,4 +1,9 @@
 .nav-panel {
+  width: 94px;
+  max-height: ~'calc(100vh - 25px)';
+  overflow-y: auto;
+  padding-bottom: 20px;
+  align-items: center;
   background-color: #edf0f2;
   border-radius: 10px;
   display: inline-flex;
@@ -7,15 +12,25 @@
   padding-left: 10px;
   padding-right: 10px;
 
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: limegreen;
+  }
+
   &__notifications {
     background-color: #6898bc;
     border-radius: 100%;
-    width: 44px;
-    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
     padding: 2px;
     border: 2px solid #6898bc;
     background-clip: content-box;
     position: relative;
+    margin-bottom: 20px;
 
     &::after {
       content: attr(data-count);
@@ -35,4 +50,91 @@
       justify-content: center;
     }
   }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding-top: 6px;
+
+    &_secondary {
+      border-top: none;
+      margin-top: 35px;
+    }
+
+  }
+
+  &__item {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &_rounded {
+      width: 42px;
+      height: 41px;
+      background-color: #97a2aa;
+      border-radius: 100%;
+    }
+
+    &_active {
+
+    }
+  }
+
+  .nav-panel__item_active.nav-panel__item_rounded {
+    background-color: #52b1fa;
+  }
+
+  &__label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 6px;
+
+    &_gray {
+      color: #97a2aa;
+    }
+
+    &_purple {
+      color: #bd91f9;
+    }
+
+    &_purple2 {
+      color: #8ca7ff
+    }
+
+    &_gold {
+      color: #deb27a;
+    }
+
+    &_pink {
+      color: #de7aa4;
+    }
+
+    &_dark-blue {
+      color: #4a82ae;
+    }
+
+    &_red {
+      color: #f66565;
+    }
+
+    &_green{
+      color: #7adec3;
+    }
+
+    &_blue {
+      color: #3bb8ff;
+    }
+  }
+
+
 }
