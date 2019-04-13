@@ -1,0 +1,50 @@
+{% macro nav_panel(activeItem='', class='') %}
+
+<nav class="nav-panel">
+
+  <a class="nav-panel__notifications" href="#" data-count='1'></a>
+
+  <ul class="nav-panel__list">
+    <li>
+      <a class="nav-panel__item nav-panel__item_dashboard" data-label='dashboard' href="#"></a>
+    </li>
+    <li>
+      <a class="nav-panel__item nav-panel__item_consoles" data-label='consoles' href="#"></a>
+    </li>
+    <li>
+      <a class="nav-panel__item nav-panel__item_shop" data-label='shop' href="#"></a>
+    </li>
+    <li>
+      <a class="nav-panel__item nav-panel__item_orders" data-label='orders' href="#"></a>
+    </li>
+    <li>
+      <a class="nav-panel__item nav-panel__item_guests" data-label='guests' href="#"></a>
+    </li>
+    <li>
+      <a class="nav-panel__item nav-panel__item_sliderControl" data-label='slider control' href="#"></a>
+    </li>
+    <li>
+      <a class="nav-panel__item nav-panel__item_activity" data-label='activity' href="#"></a>
+    </li>
+    <li>
+      <a class="nav-panel__item nav-panel__item_stats" data-label='stats' href="#"></a>
+    </li>
+    <li>
+      <a class="nav-panel__item nav-panel__item_gpdrRequests" data-label='gpdr requests' href="#"></a>
+    </li>
+  </ul>
+
+  <ul class="nav-panel__list nav-panel__list_secondary">
+    <li>
+      <a class="nav-panel__item nav-panel__item_fullscreen" href="#"></a>
+    </li>
+    <li>
+      <a class="nav-panel__item nav-panel__item_settings" href="#"></a>
+    </li>
+    <li>
+      <a class="nav-panel__item nav-panel__item_logout" href="#"></a>
+    </li>
+  </ul>
+</nav>
+
+{% endmacro %}
