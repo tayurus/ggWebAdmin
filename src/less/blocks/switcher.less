@@ -1,0 +1,45 @@
+.switcher {
+  width: 43px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+
+  &__control {
+    display: none;
+  }
+
+  &__control:checked + .switcher__ball {
+    left: 50%;
+    background-color: #92cfff;
+  }
+
+  &__control:checked ~ .switcher__track {
+    background-color: #4fb0fa;
+  }
+
+  &__ball {
+    transition: .5s;
+    width: 20px;
+    height: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    background-color: #f8f9f9;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &__track {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 37px;
+    height: 14px;
+    border-radius: 10px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.27);
+    background-color: #e4e6e7;
+  }
+}
