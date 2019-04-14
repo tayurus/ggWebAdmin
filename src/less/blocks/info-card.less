@@ -3,6 +3,9 @@
   padding: 9px 16px 12px 16px;
   max-width: 426px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
 
   &_green {
     background-color: #7adec3;
@@ -47,5 +50,37 @@
     font-family: "Brandon Grotesque - Black";
     font-size: 27px;
     color: #ffffff;
+
+    &_light {
+      font-family: "Helvetica";
+      font-weight: 300;
+      font-size: 15px;
+      color: #fff;
+    }
+
+    &_center {
+      text-align: center;
+    }
+
+    &_right {
+      text-align: right;
+    }
+
+    &_bold {
+      font-family: "Helvetica";
+      font-weight: 700;
+      font-size: 15px;
+    }
   }
+
+  &__table {
+    width: 100%;
+  }
+
+  &__total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
 }
