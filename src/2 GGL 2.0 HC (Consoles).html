@@ -1,0 +1,27 @@
+{% extends "./templates/decorators/_base.html"  %}
+{%  from './templates/macros/nav-panel.html' import nav_panel %}
+{%  from './templates/macros/info-cards-grid.html' import info_cards_grid %}
+{%  from './templates/macros/site-table.html' import site_table %}
+{%  from './templates/macros/tab-title.html' import tab_title %}
+
+{% block page_title %}
+
+{% endblock %}
+
+{% block page_body %}
+
+  <div class="site-container">
+    <div class="site-row">
+      {{nav_panel('dashboard')}}
+      <div class="site-container site-container_content">
+        {% include './templates/partials/site-header.html' %}
+        {{tab_title('CONSOLES', 'purple', 'plus')}}
+        {{site_table('consoles', consolesData)}}
+      </div>
+    </div>
+
+  </div>
+
+
+
+{% endblock %}

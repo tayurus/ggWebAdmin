@@ -31,6 +31,33 @@
     </table>
   </div>
 
+  {% endif %}
+
+  {% if type == 'consoles' %}
+
+  <div class="site-table-wrapper site-table-wrapper_purple">
+    <table class="site-table" >
+      <tr class="site-table__row site-table__row_header">
+        <th class="site-table__cell site-table__cell_header">Type</th>
+        <th class="site-table__cell site-table__cell_header">Name</th>
+        <th class="site-table__cell site-table__cell_header">Group</th>
+        <th class="site-table__cell site-table__cell_header">Username</th>
+      </tr>
+
+      <tr class="site-table__row">
+        <td class="site-table__cell site-table__cell_spacer" colspan="7"></td>
+      </tr>
+
+      {% for rowData in data %}
+        <tr class="site-table__row">
+          <td class="site-table__cell"><img src="images/site-table/consoles/{{rowData.type}}.png" alt="{{rowData.type}}"/></td>
+          <td class="site-table__cell">{{rowData.name}}</td>
+          <td class="site-table__cell">{{rowData.group}}</td>
+          <td class="site-table__cell">{{rowData.username}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
 
   {% endif %}
 

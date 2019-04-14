@@ -1,0 +1,88 @@
+{
+  "consolesData" : [
+    {
+      "type": "ps4Pro",
+      "name" : "Console 1",
+      "group" : "General sys",
+      "username" : "Smokedship"
+    },
+    {
+      "type": "ps4",
+      "name" : "Console 2",
+      "group" : "General sys",
+      "username" : "__"
+    },
+    {
+      "type": "ps4",
+      "name" : "Console 3",
+      "group" : "General sys",
+      "username" : "PsychoAnalyzer8"
+    },
+    {
+      "type": "xboxOne",
+      "name" : "Console 4",
+      "group" : "General sys",
+      "username" : "__"
+    },
+    {
+      "type": "nintendoSwitch",
+      "name" : "Corner Cafe Console 1",
+      "group" : "Cafe Area",
+      "username" : "__"
+    },
+    {
+      "type": "wiiU",
+      "name" : "Corner Cafe Console 2",
+      "group" : "Cafe Area",
+      "username" : "__"
+    },
+    {
+      "type": "wii",
+      "name" : "Corner Cafe Console 3",
+      "group" : "Cafe Area",
+      "username" : "__"
+    },
+    {
+      "type": "nvidiaShield",
+      "name" : "Test Area",
+      "group" : "General sys",
+      "username" : "_"
+    },
+    {
+      "type": "xboxOneX",
+      "name" : "Console 5",
+      "group" : "General sys",
+      "username" : "Kankicks"
+    },
+    {
+      "type": "xboxOne",
+      "name" : "Console 6",
+      "group" : "General sys",
+      "username" : "_"
+    },
+    {
+      "type": "xboxOne",
+      "name" : "Console 7",
+      "group" : "General sys",
+      "username" : "_"
+    },
+    {
+      "type": "nintendoSwitch",
+      "name" : "NEW",
+      "group" : "General sys",
+      "username" : "Newguy748"
+    },
+    {
+      "type": "wii",
+      "name" : "Console 8",
+      "group" : "Old Sys",
+      "username" : "PoppySleepy"
+    },
+    {
+      "type": "xbox360",
+      "name" : "Console 9",
+      "group" : "Old Sys",
+      "username" : "MajorNelsinasdj"
+    }
+  ]
+}

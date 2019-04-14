@@ -1,0 +1,8 @@
+{% macro tab_title(text, color, iconName, class='tab-title_pl51') %}
+  <div class="tab-title {{class if class != ''}}">
+    <h2 class="tab-title__text tab-title__text_{{color}}">{{text}}</h2>
+    <button class="tab-title__icon" href="#">
+      <img src="images/tab-title/{{iconName}}.png" alt="{{iconName}}"/>
+    </button>
+  </div>
+{% endmacro %}
