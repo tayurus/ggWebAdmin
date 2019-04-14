@@ -8,13 +8,16 @@
 
 {% block page_body %}
 
-  <div class="site-container">
-    <div class="site-row">
-      {{nav_panel('statistic')}}
+<div class="site-container">
+  <div class="site-row">
+    {{nav_panel('dashboard')}}
+    <div class="site-container site-container_content">
       {{info_cards_grid('statistic')}}
     </div>
 
   </div>
+
+</div>
 
 
 {% endblock %}

@@ -11,7 +11,11 @@
   <div class="site-container">
     <div class="site-row">
       {{nav_panel('dashboard')}}
-      {{info_cards_grid('common')}}
+      <div class="site-container site-container_content">
+        {{info_cards_grid('common')}}
+
+        <input type="search" placeholder="search" class="site-input site-input_search">
+      </div>
     </div>
 
   </div>
