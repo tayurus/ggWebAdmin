@@ -6,7 +6,10 @@
 
 {% block page_body %}
 
-  {{nav_panel('settings')}}
-  {% include './templates/partials/switcher.html' %}
+  <div class="site-container">
+    {{nav_panel('settings')}}
+    {% include './templates/partials/switcher.html' %}
+  </div>
+
 
 {% endblock %}

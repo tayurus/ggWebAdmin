@@ -8,8 +8,14 @@
 
 {% block page_body %}
 
-  {{nav_panel('settings')}}
-  {{info_cards_grid('common')}}
+  <div class="site-container">
+    <div class="site-row">
+      {{nav_panel('dashboard')}}
+      {{info_cards_grid('common')}}
+    </div>
+
+  </div>
+
 
 
 {% endblock %}
