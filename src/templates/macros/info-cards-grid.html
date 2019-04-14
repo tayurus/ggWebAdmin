@@ -1,9 +1,9 @@
 {%  from './info-card.html' import info_card %}
 
-{% macro info_cards_grid(type='common') %}
+{% macro info_cards_grid(type='common', class='') %}
 
   {% if type == 'common' %}
-    <div class="info-cards-grid">
+    <div class="info-cards-grid {{class if class != ''}}">
       {{info_card('common', 'green', 'Today’s Income', '$0')}}
       {{info_card('common', 'orange', 'Computers Available', '6')}}
       {{info_card('common', 'gray', 'Total Gaming Time Purchased', '$0')}}

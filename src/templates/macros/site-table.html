@@ -1,0 +1,37 @@
+{% macro site_table(type, data) %}
+
+  {% if type == 'common' %}
+  <div class="site-table-wrapper">
+    <table class="site-table" >
+      <tr class="site-table__row site-table__row_header">
+        <th class="site-table__cell site-table__cell_header">PC</th>
+        <th class="site-table__cell site-table__cell_header">Status</th>
+        <th class="site-table__cell site-table__cell_header">Username</th>
+        <th class="site-table__cell site-table__cell_header">Apps</th>
+        <th class="site-table__cell site-table__cell_header">Group</th>
+        <th class="site-table__cell site-table__cell_header">Teme Remaining</th>
+        <th class="site-table__cell site-table__cell_header">Last Seen</th>
+      </tr>
+
+      <tr class="site-table__row">
+        <td class="site-table__cell site-table__cell_spacer" colspan="7"></td>
+      </tr>
+
+      {% for index in range(1, 8) %}
+        <tr class="site-table__row">
+          <td class="site-table__cell">WS {{index}}</td>
+          <td class="site-table__cell">off</td>
+          <td class="site-table__cell">__</td>
+          <td class="site-table__cell">__</td>
+          <td class="site-table__cell">General Sys</td>
+          <td class="site-table__cell">Teme Remaining</td>
+          <td class="site-table__cell">Last Seen</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+
+  {% endif %}
+
+{% endmacro %}
