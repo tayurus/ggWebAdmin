@@ -1,0 +1,21 @@
+{% extends "./templates/decorators/_base.html"  %}
+{%  from './templates/macros/nav-panel.html' import nav_panel %}
+{%  from './templates/macros/info-card.html' import info_card %}
+{% block page_title %}
+
+{% endblock %}
+
+{% block page_body %}
+
+  {{nav_panel('settings')}}
+
+  {{info_card('common', 'green', 'Today’s Income', '$0')}}
+  {{info_card('common', 'orange', 'Computers Available', '6')}}
+  {{info_card('common', 'gray', 'Total Gaming Time Purchased', '$0')}}
+  {{info_card('common', 'red', 'Total Money Deposited', '$0')}}
+  {{info_card('common', 'blue', 'Today’s Sales', '$0')}}
+  {{info_card('common', 'purple', 'Consoles Available', '$0')}}
+  {{info_card('common', 'gold', 'Total Product Spent', '$0')}}
+  {{info_card('common', 'aquamarine', 'Total Prizes Redeemed', '0')}}
+
+{% endblock %}
