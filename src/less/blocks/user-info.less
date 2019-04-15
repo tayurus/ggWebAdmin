@@ -1,0 +1,63 @@
+.user-info {
+  display: grid;
+  grid-template-columns: 318px 50px;
+  grid-template-rows: 36px 25px;
+  grid-gap: 2px;
+  color: #fff;
+
+  &__btn {
+    grid-row-start: span 2;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: url('../images/user-info/plus.png');
+    background-repeat: no-repeat;
+    background-size: 24px 21px;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &__name {
+    border-top-left-radius: 5px;
+    font-size: 21px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__summ {
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+    padding-left: 10px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__points {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 3px;
+    padding-left: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    &::before {
+      content: '';
+      width: 21px;
+      height: 21px;
+      background-color: #ffa22d;
+      margin-right: 3px;
+      background-image: url('../images/user-info/s.png');
+      background-size: 9px 12px;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 100%;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}

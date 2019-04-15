@@ -1,3 +1,4 @@
+
 {% macro site_table(type, data) %}
 
   {% if type == 'common' %}
@@ -57,6 +58,32 @@
         </tr>
       {% endfor %}
     </table>
+  </div>
+
+  {% endif %}
+
+  {% if type == 'shop' %}
+
+  <div class="site-table-wrapper site-table-wrapper_gold">
+
+    {% include './../partials/user-info.html'  %}
+
+    <table class="site-table">
+      <tr class="site-table__row">
+        <td class="site-table__cell site-table__cell_spacer" colspan="3"></td>
+      </tr>
+
+      {% for rowData in data %}
+        <tr class="site-table__row">
+          <td class="site-table__cell site-table__cell_lg">{{rowData.name}}</td>
+          <td class="site-table__cell site-table__cell_lg">{{rowData.count}}</td>
+          <td class="site-table__cell site-table__cell_lg site-table__cell_bold">{{rowData.summ}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+
+    {% include './../partials/shop-total.html'  %}
+
   </div>
 
   {% endif %}

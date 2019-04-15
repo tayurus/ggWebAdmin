@@ -1,0 +1,14 @@
+{
+  "shopData" : [
+    {
+      "name" : "All Day PASS",
+      "count" : "x1",
+      "summ" : "$20"
+    },
+    {
+      "name" : "All Night PASS",
+      "count" : "x1",
+      "summ" : "$25"
+    }
+  ]
+}
